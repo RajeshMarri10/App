@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Release.Name }}
+  name: tesla
 data:
   {{- range .Values.features }}
   {{- if .enabled }}
